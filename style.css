@@ -1,6 +1,7 @@
 :root {
   --main-color: #f7a42f;
   --segundario: #e59317;
+  --f4: #f4fec1;
   --black: #13131a;
   --bg: #010103;
   --white: #ffffff;
@@ -239,7 +240,7 @@ section {
   text-align: center;
 }
 
-.menu .box-container {
+.box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
@@ -275,9 +276,58 @@ section {
 }
 
 .menu .box-container .box:hover {
-  background-color: var(--white);
+  background-color: var(--f4);
 }
 
 .menu .box-container .box:hover > * {
   color: var(--black);
+}
+
+.review .box-container .box {
+  border: var(--border);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.review .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 2rem 0;
+  line-height: 1.8;
+  font-weight: lighter;
+}
+
+.review .box-container .box h3 {
+  color: var(--white);
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem; /* Ajuste conforme necessário */
+  font-weight: lighter;
+  margin-top: 0.5rem; /* Adapte a margem conforme a necessidade */
+}
+
+.review .box-container .box .user {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+
+.endereco {
+  text-align: center; /* Garante que o título fique alinhado */
+}
+
+.map-container {
+  margin-top: 20px; /* Espaço entre o título e o mapa */
+  display: flex;
+  justify-content: center; /* Centraliza o mapa */
+}
+
+.title {
+  margin-bottom: 20px; /* Ou qualquer valor maior para espaçamento */
 }
