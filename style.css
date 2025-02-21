@@ -331,3 +331,21 @@ section {
 .title {
   margin-bottom: 20px; /* Ou qualquer valor maior para espaçamento */
 }
+
+.footer {
+  text-align: center;
+}
+
+.footer .share {
+  padding: 1rem 0;
+}
+.footer .share img {
+  margin: 0.3rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.footer .share img:hover {
+  background-color: var(--segundario);
+}
